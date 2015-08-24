@@ -8,7 +8,7 @@ y = rand(1000)
 z = randn(1000)
 res = rand(1000)
 tmp=[1.0,2.0]
-println(exp!(tmp, [1.0, 2.0]), exp([1.0, 2.0]))
+println(Yeppp.exp!(tmp, [1.0, 2.0]), exp([1.0, 2.0]))
 @test Yeppp.add!(res, x, y) == x .+ y
 @test Yeppp.multiply!(res, x, y) == x .* y 
 @test Yeppp.subtract!(res, x, y) == x .- y 
